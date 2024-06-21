@@ -143,10 +143,10 @@ table {
   }
 
 @media screen and (max-width: 560px) {
-    #wrapper {
-        display: block;
+    #recipe {
+        width: 100%;
     }
-
+    
     #omelette_img {
         width: 100%;
         height: auto;
