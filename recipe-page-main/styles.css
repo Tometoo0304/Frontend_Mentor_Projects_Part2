@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: hsl(24, 5%, 18%);
+    --primary-title-text-color: hsl(14, 45%, 36%);
+
+}
+
+html {
+    background-color: #f3e5d8;
+}
+
+body {
+    margin: 0px;
+}
+
+.primary_font {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.secondary_font {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bold_text {
+    font-weight: bold;
+}
+
+.section_title {
+    color: var(--primary-title-text-color);
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recipe {
+    width: 560px;
+    background-color: hsl(0, 0%, 100%);
+    color: var(--primary-text-color);
+
+}
+
+#omelette_img {
+    width: 500px;
+    height: 225px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.title {
+    font-size: 27px;
+    margin: 0px 25px 0px;
+
+}
+
+.recipe_description {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 13px;
+    line-height: 1.5;
+    
+}
+
+
+.preparation_time {
+    margin: 40px 50px 40px 50px;
+    font-size: 13px;
+}
+
+#preparation_title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: hsl(332, 51%, 32%);
+}
+
+#preparation_time_list {
+    margin-top: 10px;
+    padding-left: 22px;
+}
+
+
+#preparation_time_list li::marker {
+    font-size: small;
+    color: hsl(332, 51%, 32%);
+}
+
+#ingredients_list {
+    padding-left: 22px;
+}
+
+#ingredients_list li::marker {
+    font-size: small;
+}
+
+.ingredients, .instructions, .nutrition {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 13px;
+}
+
+.ingredients, .instructions{
+    margin-bottom: 50px;
+}
+
+#instructions_list {
+    padding-left: 22px;
+    line-height: 1.5;
+}
+
+#preparation_time_list li, 
+#ingredients_list li, 
+#instructions_list li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#instructions_list li::marker {
+    font-size: small;
+    font-weight: bold;
+    color: var(--primary-title-text-color);
+}
+
+#nutrition_description {
+ margin-bottom: 0px;
+}
+
+table {
+    border-spacing: 0 20px;
+    width: 100%;
+    padding-left: 5%;
+  }
+
+@media screen and (max-width: 560px) {
+    #wrapper {
+        display: block;
+    }
+
+    #omelette_img {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        border-radius: 0px;
+    }
+    
+
+
+}
+
+
+
+
+
+
