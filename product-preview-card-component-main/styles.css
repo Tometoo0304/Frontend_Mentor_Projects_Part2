@@ -105,6 +105,10 @@ html {
     margin-right: 10px;
 }
 
+#add_cart_btn:active {
+    background-color: hsl(157, 42%, 17%);
+}
+
 @media screen and (max-width:500px) {
     .product_card_container {
         flex-direction: column;
