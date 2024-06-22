@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-font-family: "Montserrat", sans-serif;
+    --secondary-font-family: "Fraunces", serif;
+    --primary-font-color: hsl(228, 12%, 48%);
+}
+
+html {
+    background-color: hsl(30, 38%, 92%);
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.product_card_container {
+    display: flex;
+    height: 370px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+#product_img {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.product_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 25px;
+}
+
+#category{
+    font-family: var(--primary-font-family);
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--primary-font-color);
+
+}
+
+#product_name {
+    font-family: var(--secondary-font-family);
+    line-height: 1;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+#product_description {
+    font-family: var(--primary-font-family);
+    color: var(--primary-font-color);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#product_price {
+    display: flex;
+    align-items: center;
+}
+
+#current_price {
+    font-family: var(--secondary-font-family);
+    font-size: 25px;
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    margin-right: 12px;
+
+}
+
+#original_price {
+    font-family: var(--primary-font-family);
+    font-size: 10px;
+    text-decoration: line-through;
+    color: var(--primary-font-color);
+}
+
+#add_cart_btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart_icon {
+    margin-right: 10px;
+}
+
+@media screen and (max-width:500px) {
+    .product_card_container {
+        flex-direction: column;
+        width: 90%;
+        height: 92%;
+    }
+
+    #product_img {
+        width: 100%;
+        height: 40%;
+        border-radius: 10px 10px 0px 0px;
+        object-fit: cover;
+        object-position: 50% 40%;
+    }
+
+}
