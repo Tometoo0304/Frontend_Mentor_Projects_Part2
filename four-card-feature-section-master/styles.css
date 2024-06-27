@@ -123,7 +123,7 @@ h2 {
     height: 5vw;
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 600px) {
     main {
         display: flex;
         flex-direction: column;
